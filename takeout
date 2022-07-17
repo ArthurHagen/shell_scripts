@@ -3,9 +3,19 @@ victim=`killall $1 2>&1`
 
 LINES_killed[0]="$1 fell of a cliff"
 LINES_killed[1]="$1 left the stove on and fell asleep"
+LINES_killed[2]="$1 tried to install gentoo"
+LINES_killed[3]="A floppydisk suddenly manifested in $1's brain.\nnot even the spanish inquisition expected that."
+LINES_killed[4]="$1 ate a potato of of a lead plate"
+LINES_killed[5]="$1 set winning a darwin award as his life's only goal and finaly succeded"
+LINES_killed[6]="$1 had enough of people calling him about his car's extended warranty.\n$1 went in to the woods, never to be seen again."
+LINES_killed[7]=""
+
 LINES_killed_len="${#LINES_killed[@]}"
 
 LINES_got_away[0]="$1 did not open the door.\nNothing we could do about that"
+LINES_got_away[1]="The assassin missread $1's address and killed an innocent family instead."
+LINES_got_away[2]="Your imaginary friend $1 does not exist and thereby cannot be killed"
+
 LINES_got_away_len="${#LINES_got_away[@]}"
 
 if [ -z "$victim" ]
