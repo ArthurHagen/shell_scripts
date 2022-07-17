@@ -1,0 +1,19 @@
+#!/bin/sh
+victim=`killall $1 2>&1`
+
+LINES_killed[0]="$1 fell of a cliff"
+LINES_killed[1]="$1 left the stove on and fell asleep"
+LINES_killed_len="${#LINES_killed[@]}"
+
+LINES_got_away[0]="$1 did not open the door.\nNothing we could do about that"
+LINES_got_away_len="${#LINES_got_away[@]}"
+
+if [ -z "$victim" ]
+then
+    rand_num="$(($RANDOM%$LINES_killed_len))"
+    printf "${LINES_killed[rand_num]}\n"
+else
+    rand_num="$(($RANDOM%$LINES_got_away_len))"
+    printf "${LINES_got_away[0]}\n"
+fi
+printf ${LINES_got_away[0]}
