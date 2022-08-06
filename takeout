@@ -10,6 +10,7 @@ LINES_killed[5]="$1 set winning a darwin award as his life's only goal and final
 LINES_killed[6]="$1 had enough of people calling him about his car's extended warranty.\n$1 went in to the woods, never to be seen again."
 LINES_killed[7]="$1 got what was coming to it"
 LINES_killed[8]="$1 tried exiting vim"
+LINES_killed[9]="$1 tried updating it's system and was mistaken for a hacker"
 
 LINES_killed_len="${#LINES_killed[@]}"
 
