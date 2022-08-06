@@ -15,6 +15,7 @@ LINES_got_away[0]="$1 did not open the door.\nNothing we could do about that"
 LINES_got_away[1]="The assassin missread $1's address and killed an innocent family instead."
 LINES_got_away[2]="Your imaginary friend $1 does not exist and thereby cannot be killed"
 LINES_got_away[3]="$1 might or might not have been dead all along"
+LINES_got_away[4]="Must have been the wind"
 
 LINES_got_away_len="${#LINES_got_away[@]}"
 
